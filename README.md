@@ -1,8 +1,8 @@
-# glitchy-planner
+# glitchy-notes
 *Developed by: Jimmy Bull*
 ## Description
 *This is an app where users can create, and edit a todo list. *
-#### Hosted [HERE](https://glitchy-cat.github.io/glitchy-planner/  "glitchy-planner").
+#### Hosted [HERE](https://glitchy-cat.github.io/glitchy-notes/  "glitchy-notes").
 ___
 ## User Stories
 1. *As a student I want an easy to use app that I can use to keep track of my asignments and topics to study.*
