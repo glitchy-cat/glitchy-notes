@@ -1,4 +1,4 @@
-import Addtodo from '../components/additem';
+import Addtodo from '../components/add-item';
 
 export default function Home() {
   return (
