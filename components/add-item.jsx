@@ -11,20 +11,25 @@ function Addtodo(props) {
   };
 
   const addItem = async () => {
-    if (inputText.trim().length > 0) {
-      setList([...list, inputText]);
-      setInputText("");
+    let exists = false
+    if (inputText.trim().length > 0) { 
+      list.forEach(element => {
+        if (element === inputText) {
+          alert('Task already exists.');
+          exists = true
+        }
+
+      });
+      if (exists === false) {
+        setList([...list, inputText]);
+        setInputText("");
+      }
     }
   };
 
   const onEnterPress = async (e) => {
     if (e.key === "Enter") {
-      if (inputText.trim().length > 0)
-        // adds text to the list
-        //setInputText(e.currentTarget.value);
-        // updates the list
-        setList([...list, inputText]);
-      setInputText("");
+      addItem()
     }
   };
 
@@ -60,7 +65,7 @@ function Addtodo(props) {
       <div className={"bg-gray-100 p-2 rounded"}>
         <ul>
           {list.map((item, idx) => {
-            return <Todoitem key={idx} item={item} />;
+            return <Todoitem key={idx} setList={setList} item={item} list={list}  />;
           })}
         </ul>
       </div>
