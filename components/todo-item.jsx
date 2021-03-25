@@ -4,9 +4,21 @@ import { FaTrashAlt } from "react-icons/fa";
 
 function Todoitem(props) {
 
-function handleRemoveClick(task) {
-    console.log(props.list)
+  const [OldItem, NewItem] = useState();
+
+  /*
+   
+  function EditItem() {
+    NewItem()
+
+  } 
+
+  */
+
+  function handleRemoveClick(task) {
+  
     props.setList(props.list.filter(item => item !== task));
+    console.log(props.item, 'item removed')
 
     }
 
@@ -20,6 +32,7 @@ return (
         <button className={'float-right'} onClick={() => handleRemoveClick(props.item)}>
           <FaTrashAlt className={"fill-current text-red-400 "} />
         </button>
+        <button className={'float-right'} onClick={() => EditItem}>Edit</button>
       </span>
     </li>
   );
