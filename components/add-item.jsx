@@ -5,7 +5,7 @@ function Addtodo(props) {
   const [inputText, setInputText] = useState("");
   const [list, setList] = useState([]);
 
-  const onInputChange = async (e) => {
+  const onInputChange = async (e) => {cd
     setInputText(e.currentTarget.value);
   };
 
