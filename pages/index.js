@@ -1,11 +1,9 @@
-import Addtodo from '../components/add-item';
-import Navbar from '../components/navbar';
+import Form from '../components/Form';
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <Addtodo />
+      <Form />
     </div>
   )
 }
