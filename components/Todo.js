@@ -1,10 +1,10 @@
 import React from "react";
 import TodoList from "./Todolist";
 
-function Todo() {
+function Todo({text}) {
   return (
     <div>
-      <li>item goes here</li>
+      <li>{text}</li>
       <button>delete</button>
       <button>compete</button>
     </div>

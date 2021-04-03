@@ -19,7 +19,7 @@ export default function Home() {
         todos={todos}
         setTodos={setTodos}
       />
-      <TodoList />
+      <TodoList todos={todos} />
     </div>
   );
 }
